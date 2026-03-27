@@ -44,3 +44,5 @@ Emotion detection is based on weighted keyword scanning. Each user’s input sta
 • Visualize the overall emotion score detected in the statement using a centered bar with block characters (review the ASCII table in emu86) as follows: center = 0, right = positive, left = negative.\
 • Output an advice or suggestion based on that overall score.\
 • List all possible overall emotion scores with an example sentence, the corresponding visual representation, and your customized advice in another table. Also, provide screenshots of your output for each case of these cases.
+<Center>Example positive and negative emotional words with their scores. </Center>
+<Center><img width="628" height="132" alt="image" src="https://github.com/user-attachments/assets/acc8477c-dd23-4ed5-8419-d63ed67f367d" /></Center>
