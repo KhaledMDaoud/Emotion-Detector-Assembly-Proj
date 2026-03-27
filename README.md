@@ -35,7 +35,7 @@ C. Emotion Detection: Keyword-based scoring of user input with visual output and
 • Once authenticated, the user is asked to enter a statement that define his mood , the emotion detection will then output an emotion score numerically and visually to represent it on the screen with suggested advice based on that score.\
 • Guest Mode:\
 • Input statement without authentication.\
-• No visualization or advice output.\
+• No visualization or advice output.
 5. XOR Key Generation\
 • An XOR single-byte key is derived from the last non-zero digit of students’ IDs, converted to hex.\
 6. Emotion Detection Design\
