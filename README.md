@@ -14,8 +14,8 @@ Scores are presented numerically and visually using block characters, and users 
 based on their detected mood. 
 1. System Overview 
 The system has three main modules: 
-A. Access Mode Selection: Admin, User, Guest.  -\ 
-Admin: Enroll new user, manage encrypted passwords. - -\ 
+A. Access Mode Selection: Admin, User, Guest.\ 
+Admin: Enroll new user, manage encrypted passwords.\ 
 User: Authenticate and input sentences for emotion detection.\ 
 Guest: Test emotion detection without authentication, visualization, or advice.\ 
 B. Password Authentication: XOR-based encryption and validation with masking of input.\ 
