@@ -37,7 +37,7 @@ C. Emotion Detection: Keyword-based scoring of user input with visual output and
 • Input statement without authentication.\
 • No visualization or advice output.
 5. XOR Key Generation\
-• An XOR single-byte key is derived from the last non-zero digit of students’ IDs, converted to hex.\
+• An XOR single-byte key is derived from the last non-zero digit of students’ IDs, converted to hex.
 6. Emotion Detection Design\
 Emotion detection is based on weighted keyword scanning. Each user’s input statement (max length is 80) is scanned word-by-word to match predefined positive and negative keywords stored in the data segment. Each word carries a score between +1 and +3 for positive or -1 and -3 for negative emotions. See examples on Table 1. The cumulative score defines the overall mood as positive, neutral, or negative.\
 • Customize this by choosing a set of positive and negative words. Create similar table as below with your emotional selected words and their scores.\
