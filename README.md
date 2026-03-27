@@ -22,22 +22,22 @@ B. Password Authentication: XOR-based encryption and validation with masking of 
 C. Emotion Detection: Keyword-based scoring of user input with visual output and advice. 
 3. Access Mode Selection\
 • Admin Mode:\
-• Add new users and passwords to memory.\ 
-• Encrypt all passwords using an XOR key derived from the last non-zero digit of the students’ IDs in the team (see detailed description below).\ 
-• The system will support three username–password pairs: two hard-coded accounts and one initially empty account that can be created at runtimethrough the Admin access mode.\ 
-• Each team may choose the maximum allowed lengths for usernames and passwordsin their system, but these limits must be clearly stated in the report.\ 
+• Add new users and passwords to memory.\
+• Encrypt all passwords using an XOR key derived from the last non-zero digit of the students’ IDs in the team (see detailed description below).\
+• The system will support three username–password pairs: two hard-coded accounts and one initially empty account that can be created at runtimethrough the Admin access mode.\
+• Each team may choose the maximum allowed lengths for usernames and passwordsin their system, but these limits must be clearly stated in the report.\
 • User Mode:\
-• Enter username and password.\ 
+• Enter username and password.\
 • Password entry displays * for each character for privacy reasons.\
-• Validate password against stored encrypted values. (Hint: Don’t forget the XOR encryption).\ 
+• Validate password against stored encrypted values. (Hint: Don’t forget the XOR encryption).\
 • Three attempts allowed; session terminates after three failures.\
-• Display a message that indicate whether the access is granted or denied.\ 
-• Once authenticated, the user is asked to enter a statement that define his mood , the emotion detection will then output an emotion score numerically and visually to represent it on the screen with suggested advice based on that score.\ 
+• Display a message that indicate whether the access is granted or denied.\
+• Once authenticated, the user is asked to enter a statement that define his mood , the emotion detection will then output an emotion score numerically and visually to represent it on the screen with suggested advice based on that score.\
 • Guest Mode:\
 • Input statement without authentication.\
 • No visualization or advice output.\
 5. XOR Key Generation\
-• An XOR single-byte key is derived from the last non-zero digit of students’ IDs, converted to hex.\ 
+• An XOR single-byte key is derived from the last non-zero digit of students’ IDs, converted to hex.\
 6. Emotion Detection Design\
 Emotion detection is based on weighted keyword scanning. Each user’s input statement (max length is 80) is scanned word-by-word to match predefined positive and negative keywords stored in the data segment. Each word carries a score between +1 and +3 for positive or -1 and -3 for negative emotions. See examples on Table 1. The cumulative score defines the overall mood as positive, neutral, or negative.\
 • Customize this by choosing a set of positive and negative words. Create similar table as below with your emotional selected words and their scores.\
