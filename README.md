@@ -14,13 +14,13 @@ Scores are presented numerically and visually using block characters, and users 
 based on their detected mood. 
 1. System Overview 
 The system has three main modules: 
-A. Access Mode Selection: Admin, User, Guest.\ 
-Admin: Enroll new user, manage encrypted passwords.\ 
-User: Authenticate and input sentences for emotion detection.\ 
-Guest: Test emotion detection without authentication, visualization, or advice.\ 
-B. Password Authentication: XOR-based encryption and validation with masking of input.\ 
+A. Access Mode Selection: Admin, User, Guest. \
+Admin: Enroll new user, manage encrypted passwords. \ 
+User: Authenticate and input sentences for emotion detection. \ 
+Guest: Test emotion detection without authentication, visualization, or advice. \ 
+B. Password Authentication: XOR-based encryption and validation with masking of input. \ 
 C. Emotion Detection: Keyword-based scoring of user input with visual output and advice. 
-2. Access Mode Selection 
+3. Access Mode Selection 
 • Admin Mode: 
 • Add new users and passwords to memory. 
 • Encrypt all passwords using an XOR key derived from the last non-zero digit of the 
@@ -47,7 +47,7 @@ score.
 • Guest Mode: 
 • Input statement without authentication. 
 • No visualization or advice output. 
-3. XOR Key Generation 
+4. XOR Key Generation 
 • An XOR single-byte key is derived from the last non-zero digit of students’ IDs, 
 converted to hex. 
 • Example:  
@@ -57,7 +57,7 @@ The encryption key: 45h
 Plain password: 50h, 41h, 53h, 53h 
 Encrypted password: 15h, 04h, 16h, 16h (using XOR with 45h) 
 2 
-4. Emotion Detection Design 
+5. Emotion Detection Design 
 Emotion detection is based on weighted keyword scanning. Each user’s input statement (max 
 length is 80) is scanned word-by-word to match predefined positive and negative keywords stored 
 in the data segment. Each word carries a score between +1 and +3 for positive or -1 and -3 for 
